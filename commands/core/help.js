@@ -1,7 +1,7 @@
 const { EmbedBuilder } = require('discord.js');
 module.exports = {
     name: 'help',
-    description: "Todos os comandos que este eu possuo!",
+    description: "Todos os comandos que eu possuo!",
     showHelp: false,
 
     execute({ client, inter }) {
