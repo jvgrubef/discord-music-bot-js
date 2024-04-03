@@ -30,13 +30,13 @@ module.exports = {
 
         const repeatResponse = {
                 'QUEUE': 'a playlist será repetida.',
-                'OFF': 'foi desabilidato.',
+                'OFF': 'foi desabilitado.',
                 'TRACK': 'a músicas atual será repetida.',
                 'AUTOPLAY': 'irei procurar músicas na mesma vibe dessa para tocar.'
         };
 
         if (queue.repeatMode === QueueRepeatMode[selected]) {
-                response = `Modo de repeticao ja esta nesse estado.`;
+                response = `Modo de repeticao já está nesse estado.`;
         } else {
                 response = queue.setRepeatMode(QueueRepeatMode[selected]) ?
                         `Algo deu errado.` : `Modo de repetição alterada, ${repeatResponse[selected]}`;
